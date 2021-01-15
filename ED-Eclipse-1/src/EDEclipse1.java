@@ -6,10 +6,14 @@ public class EDEclipse1 {
 		
 		MZFecha f1 = new MZFecha(15,3,2020);
 		MZFecha f2 = new MZFecha(15,3,2000);
-		f1.imprime();
 		
-		//f1.setFecha(29, 2, 1999);
-
+		f1.imprime();
+		f2.imprime();
+		
+		// 
+		f1.setFecha(29, 2, 1999);
+		
+		
 
 		System.out.println(f1.diferenciaDias(f2));
 	}

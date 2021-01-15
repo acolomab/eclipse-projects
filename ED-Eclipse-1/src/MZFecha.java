@@ -8,7 +8,6 @@ public class MZFecha {
 	
 	
 	
-	
 	public MZFecha(int dia, int mes, int anyo) {
 		if(comprueba(dia,mes,anyo)) {
 			this.dia = dia;
@@ -89,7 +88,6 @@ public class MZFecha {
 	}
 
 
-
 	public boolean esBisiesto(int a) {
 		boolean ret = false;
 		if(a%4==0 && (a%100==1 || a%400==0) ) {
@@ -148,7 +146,7 @@ public class MZFecha {
 	
 	public int diasdesdeInicio() {
 		
-		int i=0,r;
+		int r;
 		int dif_anyo = Math.abs(this.anyo - 1970);
 
 		r = dif_anyo * 365;
