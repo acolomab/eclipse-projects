@@ -4,9 +4,10 @@ public class ED_Debug {
 	
 	public static void funcion1() {
 		
+		int a=2;
 		
 		String string1 = "string1";
-		int a=2;
+
 		String string2 = "string2";
 		
 		
