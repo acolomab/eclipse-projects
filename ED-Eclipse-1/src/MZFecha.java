@@ -143,6 +143,14 @@ public class MZFecha {
 	}
 	
 	
+	/**
+	 * ESTA FUNCION TIENE FALLOS
+	 * Debe calcular los días de la siguiente manera: 
+	 * 
+	 * 		- Año completo: 365 días:
+	 * 		- Mes completo 30 días
+	 * */
+	
 	
 	public int diasdesdeInicio() {
 		
@@ -151,16 +159,23 @@ public class MZFecha {
 
 		r = dif_anyo * 365;
 		
-		int dias = (this.mes-1) * 30 + this.dia;
+		int dias = (this.mes) * 30 + this.dia;
 		
-		return r+dias;
+		return dias;
 	}
 	
+	
+	/**
+	 * 
+	 * ESTA FUNCIÓN TIENE ERRORES:
+	 * 
+	 * 	- A veces da negativo
+	 * */
 	public int diferenciaDias(MZFecha f) {
 		int dias1= this.diasdesdeInicio();
 		int dias2= f.diasdesdeInicio();
 		
-		return Math.abs(dias2-dias1);
+		return dias2-dias1;
 		
 	}
 }
